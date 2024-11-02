@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "1SbqiGiB1gW3zea+TTAiObORqth2aGCH/K+3VDdWpw02DCA7VV9PuX+2mbFycA8AAZkkAx1ieYqpGalDfp9Oqw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\cof45\\OneDrive\\Escritorio\\Superior\\Pragramacion\\Mastermind-Jhon\\Mastermind-JhonOsorio\\Mastermind-JhonOsorio\\Mastermind-JhonOsorio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\cof45\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.16\\microsoft.windowsdesktop.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\cof45\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.16\\microsoft.netcore.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\cof45\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.16\\microsoft.aspnetcore.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\cof45\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.16\\microsoft.netcore.app.host.win-x64.6.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}
