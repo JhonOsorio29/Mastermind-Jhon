@@ -1,0 +1,15 @@
+C:\Users\cof45\OneDrive\Escritorio\Superior\Pragramacion\Mastermind-Jhon\Mastermind-JhonOsorio\Mastermind-JhonOsorio\bin\Debug\net6.0\Mastermind-JhonOsorio.exe
+C:\Users\cof45\OneDrive\Escritorio\Superior\Pragramacion\Mastermind-Jhon\Mastermind-JhonOsorio\Mastermind-JhonOsorio\bin\Debug\net6.0\Mastermind-JhonOsorio.deps.json
+C:\Users\cof45\OneDrive\Escritorio\Superior\Pragramacion\Mastermind-Jhon\Mastermind-JhonOsorio\Mastermind-JhonOsorio\bin\Debug\net6.0\Mastermind-JhonOsorio.runtimeconfig.json
+C:\Users\cof45\OneDrive\Escritorio\Superior\Pragramacion\Mastermind-Jhon\Mastermind-JhonOsorio\Mastermind-JhonOsorio\bin\Debug\net6.0\Mastermind-JhonOsorio.dll
+C:\Users\cof45\OneDrive\Escritorio\Superior\Pragramacion\Mastermind-Jhon\Mastermind-JhonOsorio\Mastermind-JhonOsorio\bin\Debug\net6.0\Mastermind-JhonOsorio.pdb
+C:\Users\cof45\OneDrive\Escritorio\Superior\Pragramacion\Mastermind-Jhon\Mastermind-JhonOsorio\Mastermind-JhonOsorio\obj\Debug\net6.0\Mastermind-JhonOsorio.csproj.AssemblyReference.cache
+C:\Users\cof45\OneDrive\Escritorio\Superior\Pragramacion\Mastermind-Jhon\Mastermind-JhonOsorio\Mastermind-JhonOsorio\obj\Debug\net6.0\Mastermind-JhonOsorio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cof45\OneDrive\Escritorio\Superior\Pragramacion\Mastermind-Jhon\Mastermind-JhonOsorio\Mastermind-JhonOsorio\obj\Debug\net6.0\Mastermind-JhonOsorio.AssemblyInfoInputs.cache
+C:\Users\cof45\OneDrive\Escritorio\Superior\Pragramacion\Mastermind-Jhon\Mastermind-JhonOsorio\Mastermind-JhonOsorio\obj\Debug\net6.0\Mastermind-JhonOsorio.AssemblyInfo.cs
+C:\Users\cof45\OneDrive\Escritorio\Superior\Pragramacion\Mastermind-Jhon\Mastermind-JhonOsorio\Mastermind-JhonOsorio\obj\Debug\net6.0\Mastermind-JhonOsorio.csproj.CoreCompileInputs.cache
+C:\Users\cof45\OneDrive\Escritorio\Superior\Pragramacion\Mastermind-Jhon\Mastermind-JhonOsorio\Mastermind-JhonOsorio\obj\Debug\net6.0\Mastermind-JhonOsorio.dll
+C:\Users\cof45\OneDrive\Escritorio\Superior\Pragramacion\Mastermind-Jhon\Mastermind-JhonOsorio\Mastermind-JhonOsorio\obj\Debug\net6.0\refint\Mastermind-JhonOsorio.dll
+C:\Users\cof45\OneDrive\Escritorio\Superior\Pragramacion\Mastermind-Jhon\Mastermind-JhonOsorio\Mastermind-JhonOsorio\obj\Debug\net6.0\Mastermind-JhonOsorio.pdb
+C:\Users\cof45\OneDrive\Escritorio\Superior\Pragramacion\Mastermind-Jhon\Mastermind-JhonOsorio\Mastermind-JhonOsorio\obj\Debug\net6.0\Mastermind-JhonOsorio.genruntimeconfig.cache
+C:\Users\cof45\OneDrive\Escritorio\Superior\Pragramacion\Mastermind-Jhon\Mastermind-JhonOsorio\Mastermind-JhonOsorio\obj\Debug\net6.0\ref\Mastermind-JhonOsorio.dll
