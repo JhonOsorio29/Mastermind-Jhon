@@ -45,7 +45,7 @@ namespace Mastermind
             // Cambiar el color del texto
             Console.ForegroundColor = ConsoleColor.Cyan;
 
-            Console.WriteLine("*************** MASTERMIND ***************");
+            Console.WriteLine("*********** MASTERMIND BY JHON ***********");
             Console.Write("*  "); 
             Console.Write("¡Bienvenido al juego Mastermind!      ");
             Console.Write("*\n");
