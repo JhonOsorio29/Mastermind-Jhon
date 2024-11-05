@@ -12,20 +12,26 @@ namespace Mastermind
             while (continuePlaying)
             {
                 // Creamos la array con el codigo secreto, con los numeros del usuario, y la pista final.
-                int[] numSecreto = new int[4];
+                int[] numSecreto = new int [4];
                 int[] numUser = new int[4];
                 string[] pista = new string[4];
 
                 int intentos;
-                Console.Clear();
-                //MENU DEL JUEGO
-                MenuJuegoUI();
-                intentos = MenuJuego();
-                //Introducimos el numero que guardara el nSecreto
-                Console.WriteLine("\n🛡  INGRESA EL NUMERO SECRETO");
-                GetNumbers(numSecreto);
-                ReadArray(numSecreto);
 
+                Console.Clear();
+                
+                if (MenuOpciones() == 1)
+                {
+                    GetNumbers(numSecreto);
+                }
+                //Devuelve de manera aleatoria el numero secreto 
+                else GetNumbersRandoms(numSecreto);
+
+
+
+                //MENU DEL JUEGO
+                intentos = MenuJuegoUI();
+               
                 //Introducimos el numero que guardara el nSecreto
                 Intentos(intentos, numUser, numSecreto, pista);
 
@@ -36,16 +42,18 @@ namespace Mastermind
                 {
                     continuePlaying = false;
                 }
+                
             }
             Console.WriteLine("Gracias por jugar. ¡Hasta la próxima!");
 
         }
-        public static void MenuJuegoUI()
+
+        public static int MenuJuegoUI()
         {
             // Cambiar el color del texto
             Console.ForegroundColor = ConsoleColor.Cyan;
 
-            Console.WriteLine("*********** MASTERMIND BY JHON ***********");
+            Console.WriteLine("\n*********** MASTERMIND BY JHON ***********");
             Console.Write("*  "); 
             Console.Write("¡Bienvenido al juego Mastermind!      ");
             Console.Write("*\n");
@@ -64,10 +72,7 @@ namespace Mastermind
             Console.WriteLine("5. Dificultad Personalizada");
             Console.WriteLine("\n===========================================");
             Console.ResetColor();
-        }
-    
-        public static int MenuJuego()
-        {
+
             try
             {
                 Console.WriteLine("\nElige una dificultad: ");
@@ -106,7 +111,7 @@ namespace Mastermind
                     default:
                         Console.WriteLine("Opción no válida. Por favor, elige una opción del 1 al 5.");
                         // Llamada recursiva si la opción no es válida
-                        return MenuJuego();
+                        return MenuJuegoUI();
                 }
                 return numOpcion;
             }
@@ -114,7 +119,47 @@ namespace Mastermind
             {
                 Console.WriteLine("Entrada no válida. Por favor, introduce un número entre 1 y 5.");
                 // Llamada recursiva si el formato es incorrecto
-                return MenuJuego();
+                return MenuJuegoUI();
+            }
+        }
+    
+        public static void MenuOpcionesUI()
+        {
+            Console.WriteLine("1. MasterMind + Joc de proves ");
+            Console.WriteLine("2. Mastermind ");
+            
+        }
+        public static int MenuOpciones()
+        {
+            try
+            {
+                Console.WriteLine("\nElige que quieres hacer: ");
+                int numUser;
+                int numOpcion;
+                numOpcion = int.Parse(Console.ReadLine());
+
+                switch (numOpcion)
+                {
+                    case 1:
+                        Console.WriteLine("\nHas elegido MasterMind + Joc de proves");
+                        break;
+
+                    case 2:
+                        Console.WriteLine("\nHas elegido MasterMind");
+                        break;
+
+                    default:
+                        Console.WriteLine("Opción no válida. Por favor, elige una opción del 1 al 5.");
+                        // Llamada recursiva si la opción no es válida
+                        return MenuOpcionesUI();
+                }
+                return numOpcion;
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Entrada no válida. Por favor, introduce un número entre 1 y 5.");
+                // Llamada recursiva si el formato es incorrecto
+                return MenuOpcionesUI();
             }
         }
 
@@ -190,6 +235,18 @@ namespace Mastermind
                 }
             }
 
+        }
+
+        // Rellena de manera aleatoria una array
+        private static void GetNumbersRandoms(int[] num)
+        {
+            Random rand = new();
+
+            for (int i = 0; i < num.Length; i++)
+            {
+                // Variable para almacenar temporalmente el número introducido por el usuario
+                num[i] = rand.Next(1,6);
+            }
         }
 
         //Funciones para leer un array int y string

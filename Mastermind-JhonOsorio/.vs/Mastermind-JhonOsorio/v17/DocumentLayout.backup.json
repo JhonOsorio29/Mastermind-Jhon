@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\isard\\Documents\\Programacion\\Mastermind-Jhon\\Mastermind-JhonOsorio\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E5F8D6D7-E5E8-4AC5-A845-0FABEE2873AF}|Mastermind-JhonOsorio\\Mastermind-JhonOsorio.csproj|c:\\users\\isard\\documents\\programacion\\mastermind-jhon\\mastermind-jhonosorio\\mastermind-jhonosorio\\mastermind.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5F8D6D7-E5E8-4AC5-A845-0FABEE2873AF}|Mastermind-JhonOsorio\\Mastermind-JhonOsorio.csproj|solutionrelative:mastermind-jhonosorio\\mastermind.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Mastermind.cs",
+              "DocumentMoniker": "C:\\Users\\isard\\Documents\\Programacion\\Mastermind-Jhon\\Mastermind-JhonOsorio\\Mastermind-JhonOsorio\\Mastermind.cs",
+              "RelativeDocumentMoniker": "Mastermind-JhonOsorio\\Mastermind.cs",
+              "ToolTip": "C:\\Users\\isard\\Documents\\Programacion\\Mastermind-Jhon\\Mastermind-JhonOsorio\\Mastermind-JhonOsorio\\Mastermind.cs",
+              "RelativeToolTip": "Mastermind-JhonOsorio\\Mastermind.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAUwBQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T07:44:52.134Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
