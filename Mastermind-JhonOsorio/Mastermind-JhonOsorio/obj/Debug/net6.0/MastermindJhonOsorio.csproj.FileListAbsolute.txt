@@ -1,0 +1,6 @@
+C:\Users\isard\Documents\Programacion\Mastermind-Jhon\Mastermind-JhonOsorio\Mastermind-JhonOsorio\obj\Debug\net6.0\MastermindJhonOsorio.csproj.AssemblyReference.cache
+C:\Users\isard\Documents\Programacion\Mastermind-Jhon\Mastermind-JhonOsorio\Mastermind-JhonOsorio\obj\Debug\net6.0\MastermindJhonOsorio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\isard\Documents\Programacion\Mastermind-Jhon\Mastermind-JhonOsorio\Mastermind-JhonOsorio\obj\Debug\net6.0\MastermindJhonOsorio.AssemblyInfoInputs.cache
+C:\Users\isard\Documents\Programacion\Mastermind-Jhon\Mastermind-JhonOsorio\Mastermind-JhonOsorio\obj\Debug\net6.0\MastermindJhonOsorio.AssemblyInfo.cs
+C:\Users\isard\Documents\Programacion\Mastermind-Jhon\Mastermind-JhonOsorio\Mastermind-JhonOsorio\obj\Debug\net6.0\MastermindJhonOsorio.csproj.CoreCompileInputs.cache
+C:\Users\isard\Documents\Programacion\Mastermind-Jhon\Mastermind-JhonOsorio\Mastermind-JhonOsorio\obj\Debug\net6.0\MastermindJhonOsorio.sourcelink.json

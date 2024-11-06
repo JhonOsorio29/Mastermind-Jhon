@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>Mastermind_JhonOsorio</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Array">
+      <HintPath>..\..\Array\Array\bin\Debug\net8.0\Array.dll</HintPath>
+    </Reference>
+    <Reference Include="Menu">
+      <HintPath>..\..\Menu\Menu\bin\Debug\net8.0\Menu.dll</HintPath>
+    </Reference>
+    <Reference Include="UtilsLibrary">
+      <HintPath>bin\Debug\net6.0\UtilsLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

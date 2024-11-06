@@ -1,0 +1,12 @@
+C:\Users\isard\Documents\Programacion\Mastermind-Jhon\Mastermind-JhonOsorio\UtilsLibrary\bin\Debug\net8.0\UtilsLibrary.deps.json
+C:\Users\isard\Documents\Programacion\Mastermind-Jhon\Mastermind-JhonOsorio\UtilsLibrary\bin\Debug\net8.0\UtilsLibrary.dll
+C:\Users\isard\Documents\Programacion\Mastermind-Jhon\Mastermind-JhonOsorio\UtilsLibrary\bin\Debug\net8.0\UtilsLibrary.pdb
+C:\Users\isard\Documents\Programacion\Mastermind-Jhon\Mastermind-JhonOsorio\UtilsLibrary\obj\Debug\net8.0\UtilsLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\isard\Documents\Programacion\Mastermind-Jhon\Mastermind-JhonOsorio\UtilsLibrary\obj\Debug\net8.0\UtilsLibrary.AssemblyInfoInputs.cache
+C:\Users\isard\Documents\Programacion\Mastermind-Jhon\Mastermind-JhonOsorio\UtilsLibrary\obj\Debug\net8.0\UtilsLibrary.AssemblyInfo.cs
+C:\Users\isard\Documents\Programacion\Mastermind-Jhon\Mastermind-JhonOsorio\UtilsLibrary\obj\Debug\net8.0\UtilsLibrary.csproj.CoreCompileInputs.cache
+C:\Users\isard\Documents\Programacion\Mastermind-Jhon\Mastermind-JhonOsorio\UtilsLibrary\obj\Debug\net8.0\UtilsLibrary.sourcelink.json
+C:\Users\isard\Documents\Programacion\Mastermind-Jhon\Mastermind-JhonOsorio\UtilsLibrary\obj\Debug\net8.0\UtilsLibrary.dll
+C:\Users\isard\Documents\Programacion\Mastermind-Jhon\Mastermind-JhonOsorio\UtilsLibrary\obj\Debug\net8.0\refint\UtilsLibrary.dll
+C:\Users\isard\Documents\Programacion\Mastermind-Jhon\Mastermind-JhonOsorio\UtilsLibrary\obj\Debug\net8.0\UtilsLibrary.pdb
+C:\Users\isard\Documents\Programacion\Mastermind-Jhon\Mastermind-JhonOsorio\UtilsLibrary\obj\Debug\net8.0\ref\UtilsLibrary.dll

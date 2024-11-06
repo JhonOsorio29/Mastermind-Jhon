@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\isard\\Documents\\Programacion\\Mastermind-Jhon\\Mastermind-JhonOsorio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E5F8D6D7-E5E8-4AC5-A845-0FABEE2873AF}|Mastermind-JhonOsorio\\Mastermind-JhonOsorio.csproj|c:\\users\\isard\\documents\\programacion\\mastermind-jhon\\mastermind-jhonosorio\\mastermind-jhonosorio\\mastermind.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5F8D6D7-E5E8-4AC5-A845-0FABEE2873AF}|Mastermind-JhonOsorio\\Mastermind-JhonOsorio.csproj|solutionrelative:mastermind-jhonosorio\\mastermind.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E5F8D6D7-E5E8-4AC5-A845-0FABEE2873AF}|Mastermind-JhonOsorio\\MastermindJhonOsorio.csproj|c:\\users\\isard\\documents\\programacion\\mastermind-jhon\\mastermind-jhonosorio\\mastermind-jhonosorio\\mastermind.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5F8D6D7-E5E8-4AC5-A845-0FABEE2873AF}|Mastermind-JhonOsorio\\MastermindJhonOsorio.csproj|solutionrelative:mastermind-jhonosorio\\mastermind.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0375AFD-69A2-437C-92A7-75D35A0F76C7}|UtilsLibrary\\UtilsLibrary.csproj|c:\\users\\isard\\documents\\programacion\\mastermind-jhon\\mastermind-jhonosorio\\utilslibrary\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0375AFD-69A2-437C-92A7-75D35A0F76C7}|UtilsLibrary\\UtilsLibrary.csproj|solutionrelative:utilslibrary\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +18,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Utils.cs",
+              "DocumentMoniker": "C:\\Users\\isard\\Documents\\Programacion\\Mastermind-Jhon\\Mastermind-JhonOsorio\\UtilsLibrary\\Utils.cs",
+              "RelativeDocumentMoniker": "UtilsLibrary\\Utils.cs",
+              "ToolTip": "C:\\Users\\isard\\Documents\\Programacion\\Mastermind-Jhon\\Mastermind-JhonOsorio\\UtilsLibrary\\Utils.cs",
+              "RelativeToolTip": "UtilsLibrary\\Utils.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwCYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T16:52:20.779Z",
+              "IsPinned": true
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,9 +41,9 @@
               "RelativeDocumentMoniker": "Mastermind-JhonOsorio\\Mastermind.cs",
               "ToolTip": "C:\\Users\\isard\\Documents\\Programacion\\Mastermind-Jhon\\Mastermind-JhonOsorio\\Mastermind-JhonOsorio\\Mastermind.cs",
               "RelativeToolTip": "Mastermind-JhonOsorio\\Mastermind.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAUwBQAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T07:44:52.134Z",
+              "WhenOpened": "2024-11-06T16:51:59.06Z",
               "EditorCaption": ""
             }
           ]

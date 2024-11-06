@@ -1,11 +1,12 @@
 ﻿using System;
+using UtilsLibrary;
 
 // Creamos la base del programa
-namespace Mastermind
+namespace Mastermind_JhonOsorio
 {
-    public class Mastermind
+    public class MastermindJhon
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             bool continuePlaying = true;
@@ -16,19 +17,27 @@ namespace Mastermind
                 int[] numUser = new int[4];
                 string[] pista = new string[4];
 
+                int opcionSeleccionada;
                 int intentos;
 
                 Console.Clear();
-                
-                if (MenuOpciones() == 1)
+                opcionSeleccionada = MenuOpcionesUI();
+
+                if (opcionSeleccionada == 1)
                 {
-                    GetNumbers(numSecreto);
+                    Utils.GetNumbers(numSecreto);
+                    Utils.ReadArray(numSecreto);
                 }
                 //Devuelve de manera aleatoria el numero secreto 
-                else GetNumbersRandoms(numSecreto);
-
-
-
+                else if (opcionSeleccionada == 2)
+                {
+                    Utils.GetNumbersRandoms(numSecreto);
+                }
+                else if (opcionSeleccionada == 3) 
+                {
+                    break;//LAMENTO ESTE BREAK T-T
+                }
+               
                 //MENU DEL JUEGO
                 intentos = MenuJuegoUI();
                
@@ -47,122 +56,6 @@ namespace Mastermind
             Console.WriteLine("Gracias por jugar. ¡Hasta la próxima!");
 
         }
-
-        public static int MenuJuegoUI()
-        {
-            // Cambiar el color del texto
-            Console.ForegroundColor = ConsoleColor.Cyan;
-
-            Console.WriteLine("\n*********** MASTERMIND BY JHON ***********");
-            Console.Write("*  "); 
-            Console.Write("¡Bienvenido al juego Mastermind!      ");
-            Console.Write("*\n");
-            Console.Write("*   ");
-            Console.Write("Seleccione su dificultad:            ");
-            Console.Write("*\n");
-            Console.WriteLine("******************************************\n");
-
-            Console.ForegroundColor = ConsoleColor.White; // Restablecer el color a blanco para las opciones
-
-            
-            Console.WriteLine("1. Dificultad Novato    (10 intentos)");
-            Console.WriteLine("2. Dificultad Aficionado (6 intentos)");
-            Console.WriteLine("3. Dificultad Experimentado (4 intentos)");
-            Console.WriteLine("4. Dificultad Maestro    (2 intentos)");
-            Console.WriteLine("5. Dificultad Personalizada");
-            Console.WriteLine("\n===========================================");
-            Console.ResetColor();
-
-            try
-            {
-                Console.WriteLine("\nElige una dificultad: ");
-                int numUser;
-                int numOpcion;
-                numOpcion = int.Parse(Console.ReadLine());
-
-                switch (numOpcion)
-                {
-                    case 1:
-                        numOpcion = 10;
-                        Console.WriteLine("\nHas elegido novato");
-                        break;
-
-                    case 2:
-                        numOpcion = 6;
-                        Console.WriteLine("\nHas elegido aficionado");
-                        break;
-
-                    case 3:
-                        numOpcion = 4;
-                        Console.WriteLine("\nHas elegido experimentado");
-                        break;
-
-                    case 4:
-                        numOpcion = 2;
-                        Console.WriteLine("\nHas elegido maestro");
-                        break;
-
-                    case 5:
-                        Console.WriteLine("\nHas elegido personalizado");
-                        Console.WriteLine("\n¿Cuántos intentos quieres?");
-                        numUser = int.Parse(Console.ReadLine());
-                        return numUser;
-
-                    default:
-                        Console.WriteLine("Opción no válida. Por favor, elige una opción del 1 al 5.");
-                        // Llamada recursiva si la opción no es válida
-                        return MenuJuegoUI();
-                }
-                return numOpcion;
-            }
-            catch (FormatException)
-            {
-                Console.WriteLine("Entrada no válida. Por favor, introduce un número entre 1 y 5.");
-                // Llamada recursiva si el formato es incorrecto
-                return MenuJuegoUI();
-            }
-        }
-    
-        public static void MenuOpcionesUI()
-        {
-            Console.WriteLine("1. MasterMind + Joc de proves ");
-            Console.WriteLine("2. Mastermind ");
-            
-        }
-        public static int MenuOpciones()
-        {
-            try
-            {
-                Console.WriteLine("\nElige que quieres hacer: ");
-                int numUser;
-                int numOpcion;
-                numOpcion = int.Parse(Console.ReadLine());
-
-                switch (numOpcion)
-                {
-                    case 1:
-                        Console.WriteLine("\nHas elegido MasterMind + Joc de proves");
-                        break;
-
-                    case 2:
-                        Console.WriteLine("\nHas elegido MasterMind");
-                        break;
-
-                    default:
-                        Console.WriteLine("Opción no válida. Por favor, elige una opción del 1 al 5.");
-                        // Llamada recursiva si la opción no es válida
-                        return MenuOpcionesUI();
-                }
-                return numOpcion;
-            }
-            catch (FormatException)
-            {
-                Console.WriteLine("Entrada no válida. Por favor, introduce un número entre 1 y 5.");
-                // Llamada recursiva si el formato es incorrecto
-                return MenuOpcionesUI();
-            }
-        }
-
         //Cuerpo del juego donde se implementan la cantidad de intentos 
         public static void Intentos(int intentos, int[] numUser, int[] numSecreto, string[] pista)
         {
@@ -171,17 +64,17 @@ namespace Mastermind
             {
                 //Introducimos el numero del usuario
                 Console.WriteLine("\n\n🌀 INGRESA TUS NUMEROS USUARIO");
-                GetNumbers(numUser);
-                ReadArray(numUser);
+                Utils.GetNumbers(numUser);
+                Utils.ReadArray(numUser);
 
                 // Comparar los arrays numSecreto y numUser y guarda la posicion de las pistas
-                CompareArray(numSecreto, numUser, pista);
+                Utils.CompareArray(numSecreto, numUser, pista);
 
                 Console.Write("\n\n🧩 Pista:");
                 //Nos devuelve la array pista   
-                ReadArray(pista);
+                Utils.ReadArray(pista);
 
-                if (CompareArrayEquals(numUser, numSecreto))
+                if (Utils.CompareArrayEquals(numUser, numSecreto))
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("\n🎉 FELICIDADES HAS ANCERTADO EL NUMERO🎉");
@@ -198,113 +91,124 @@ namespace Mastermind
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.Write($"💔  HAS PERDIDO");
-                ReadArray(numSecreto);
+                Utils.ReadArray(numSecreto);
                 Console.ResetColor();
             }
             else Console.WriteLine("Saliendo");
         }
-
-        //Funcion para rellenar automaticamente una array
-        public static void GetNumbers(int[] num) 
-        {
-            for (int i = 0; i < num.Length; i++)
+        
+            public static int MenuJuegoUI()
             {
-                // Variable para almacenar temporalmente el número introducido por el usuario
-                Console.Write($"Ingrese el {i + 1} número (entre 1 y 6): ");
+                // Cambiar el color del texto
+                Console.ForegroundColor = ConsoleColor.Cyan;
+
+                Console.WriteLine("\n*********** MASTERMIND BY JHON ***********");
+                Console.Write("*  ");
+                Console.Write("¡Bienvenido al juego Mastermind!      ");
+                Console.Write("*\n");
+                Console.Write("*   ");
+                Console.Write("Seleccione su dificultad:            ");
+                Console.Write("*\n");
+                Console.WriteLine("******************************************\n");
+
+                Console.ForegroundColor = ConsoleColor.White; // Restablecer el color a blanco para las opciones
+
+
+                Console.WriteLine("1. Dificultad Novato    (10 intentos)");
+                Console.WriteLine("2. Dificultad Aficionado (6 intentos)");
+                Console.WriteLine("3. Dificultad Experimentado (4 intentos)");
+                Console.WriteLine("4. Dificultad Maestro    (2 intentos)");
+                Console.WriteLine("5. Dificultad Personalizada");
+                Console.WriteLine("\n===========================================");
+                Console.ResetColor();
 
                 try
                 {
-                    int numero = int.Parse(Console.ReadLine());
+                    Console.WriteLine("\nElige una dificultad: ");
+                    int numUser;
+                    int numOpcion;
+                    numOpcion = int.Parse(Console.ReadLine());
 
-                    // Verificar si el número está dentro del rango permitido
-                    if (numero < 1 || numero > 6)
+                    switch (numOpcion)
                     {
-                        Console.WriteLine("Número fuera del rango. Debe estar entre 1 y 6.");
-                        i--; // Decrementar 'i' para repetir la entrada actual
+                        case 1:
+                            numOpcion = 10;
+                            Console.WriteLine("\nHas elegido novato");
+                            break;
+
+                        case 2:
+                            numOpcion = 6;
+                            Console.WriteLine("\nHas elegido aficionado");
+                            break;
+
+                        case 3:
+                            numOpcion = 4;
+                            Console.WriteLine("\nHas elegido experimentado");
+                            break;
+
+                        case 4:
+                            numOpcion = 2;
+                            Console.WriteLine("\nHas elegido maestro");
+                            break;
+
+                        case 5:
+                            Console.WriteLine("\nHas elegido personalizado");
+                            Console.WriteLine("\n¿Cuántos intentos quieres?");
+                            numUser = int.Parse(Console.ReadLine());
+                            return numUser;
+
+                        default:
+                            Console.WriteLine("Opción no válida. Por favor, elige una opción del 1 al 5.");
+                            // Llamada recursiva si la opción no es válida
+                            return MenuJuegoUI();
                     }
-                    else
-                    {
-                        // Guardamos el número en el array
-                        num[i] = numero;
-                    }
+                    return numOpcion;
                 }
                 catch (FormatException)
                 {
-                    Console.WriteLine("Entrada no válida. Por favor, ingrese un número entero.");
-                    i--; // Decrementar 'i' para repetir la entrada actual en caso de error de formato
+                    Console.WriteLine("Entrada no válida. Por favor, introduce un número entre 1 y 5.");
+                    // Llamada recursiva si el formato es incorrecto
+                    return MenuJuegoUI();
                 }
             }
-
-        }
-
-        // Rellena de manera aleatoria una array
-        private static void GetNumbersRandoms(int[] num)
-        {
-            Random rand = new();
-
-            for (int i = 0; i < num.Length; i++)
+            public static int MenuOpcionesUI()
             {
-                // Variable para almacenar temporalmente el número introducido por el usuario
-                num[i] = rand.Next(1,6);
-            }
-        }
+                Console.WriteLine("1. MasterMind + Joc de proves ");
+                Console.WriteLine("2. Mastermind ");
+                Console.WriteLine("3. Salir ");
 
-        //Funciones para leer un array int y string
-        public static void ReadArray(int[] num)
-        {
-            Console.WriteLine("\nEL NUMERO DADO ES:");
-            for (int i = 0; i < num.Length; i++)
-            {
-                Console.Write($"{num[i]} ");
-            }
-        }
-        public static void ReadArray(string[] num)
-        {
-            for (int i = 0; i < num.Length; i++)
-            {
-                Console.Write($"{num[i]} ");
-            }
-        }
-
-        // Funcion para comparar Arrays
-        public static void CompareArray(int[] numSecret, int[] numUser, string[] pista)
-        {
-            for (int i = 0; i < numSecret.Length; i++)
-            {
-                if (numUser[i] == numSecret[i])
+                while (true) // Bucle para volver a pedir la opción si no es válida
                 {
-                    // Coincide en valor y posición
-                    pista[i] = "O"; 
-                }
-                else
-                {
-                    // Comprobar si el número está en el número secreto pero en otra posición y lo usamos de break
-                    int encontradoEnOtraPosicion = 0;
-                    for (int j = 0; j < numSecret.Length && encontradoEnOtraPosicion == 0; j++)
+                    try
                     {
-                        if (numUser[i] == numSecret[j] && i != j)
+                        Console.WriteLine("\nElige qué quieres hacer: ");
+                        int numOpcion = int.Parse(Console.ReadLine());
+
+                        switch (numOpcion)
                         {
-                            //Marca que se encontró el valor en otra posición y hace el break al cambiar el valor a 1
-                            encontradoEnOtraPosicion = 1;
+                            case 1:
+                                Console.WriteLine("\nHas elegido MasterMind + Joc de proves");
+                                return numOpcion;
+
+                            case 2:
+                                Console.WriteLine("\nHas elegido MasterMind");
+                                return numOpcion;
+
+                            case 3:
+                                Console.WriteLine("\nHas elegido salir");
+                                return numOpcion;
+
+                            default:
+                                Console.WriteLine("Opción no válida. Por favor, elige una opción del 1 al 3.");
+                                break; // Permite volver al comienzo del bucle en lugar de una recursión
                         }
                     }
-                    // Trinario para  marcar "Ø" si está en otra posición, "×" si no coincide
-                    pista[i] = encontradoEnOtraPosicion == 1 ? "Ø" : "×";
+                    catch (FormatException)
+                    {
+                        Console.WriteLine("No ingreses letras. Por favor, introduce un número entre 1 y 3.");
+                        // Continúa el bucle y vuelve a pedir la opción sin necesidad de recursión
+                    }
                 }
             }
-        }
-
-        // Comprobar si 2 arrays son iguales tanto en posicion como valor
-        public static bool CompareArrayEquals(int[] pista, int[] pistaCorrecta)
-        {
-
-            for (int i = 0; i < pista.Length; i++)
-            {
-                // Si algún elemento no coincide, no son iguales
-                if (pista[i] != pistaCorrecta[i]) return false; 
-            }
-            // Si todos los elementos coinciden, son iguales
-            return true; 
-        }
     } 
 }

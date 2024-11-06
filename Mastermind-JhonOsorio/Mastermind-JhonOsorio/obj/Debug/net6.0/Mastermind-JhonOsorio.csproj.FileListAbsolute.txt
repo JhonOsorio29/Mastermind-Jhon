@@ -28,3 +28,4 @@ C:\Users\isard\Documents\Programacion\Mastermind-Jhon\Mastermind-JhonOsorio\Mast
 C:\Users\isard\Documents\Programacion\Mastermind-Jhon\Mastermind-JhonOsorio\Mastermind-JhonOsorio\obj\Debug\net6.0\Mastermind-JhonOsorio.pdb
 C:\Users\isard\Documents\Programacion\Mastermind-Jhon\Mastermind-JhonOsorio\Mastermind-JhonOsorio\obj\Debug\net6.0\Mastermind-JhonOsorio.genruntimeconfig.cache
 C:\Users\isard\Documents\Programacion\Mastermind-Jhon\Mastermind-JhonOsorio\Mastermind-JhonOsorio\obj\Debug\net6.0\ref\Mastermind-JhonOsorio.dll
+C:\Users\isard\Documents\Programacion\Mastermind-Jhon\Mastermind-JhonOsorio\Mastermind-JhonOsorio\obj\Debug\net6.0\Mastermind-JhonOsorio.csproj.AssemblyReference.cache
